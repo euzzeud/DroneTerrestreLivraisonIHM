@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Drone terrestre de livraison</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">Drone terrestre de livraison</h1>
+    </header>
+    <div id="drone_mode">
+        <h4 class="container_title">Mode du drone</h4>
+        <form action="" method="post">
+            <input type="checkbox" id="drone_mode_switch" onchange="changeSelectedMode()">
+            <label class="drone_mode_switch_label" for="drone_mode_switch">Toggle</label>
+            <p id="selected_mode">MODE MANUEL</p>
+        </form>
+    </div>
+    </div>
+    <div id="buttons_container">
+        <h4 class="container_title">Boutons de commandes</h4>
+        <div class="commands_container">
+            <div class="button_left">
+                <form action="" method="post">
+                    <input type="button" value="↶" class="button" id="button_left">
+                </form>
+            </div>
+            <div class="button_middle">
+                <form action="" method="post">
+                    <input type="button" value="↑" class="button" id="up_button">
+                </form>
+                <form action="" method="post">
+                    <input type="button" value="↓" class="button" id="down_button">
+                </form>
+            </div>
+            <div class="button_right">
+                <form action="" method="post">
+                    <input type="button" value="↷" class="button" id="button_right">
+                </form>
+        </div>
+        </div>
+    <div id="coordinates_container">
+        <h4 class="container_title">Coordonnées de départ</h4>
+        <form action="">
+            <label for="latitude">Latitude :</label>
+            <input type="text" name="latitude" id="latitude_input">
+            <br>
+            <br>
+            <label for="longitude">Longitude :</label>
+            <input type="text" name="longitude" id="longitude_input">
+            <br>
+            <br>
+            <input type="button" value="Valider" id="submit_button">
+        </form>
+    </div>
+</body>
+</html>

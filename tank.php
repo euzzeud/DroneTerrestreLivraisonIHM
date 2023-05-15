@@ -9,16 +9,16 @@
     
     <script>
         function changeSelectedMode() {
-    var droneModeSwitch = document.getElementById("drone_mode_switch");
-    var seletedMode = document.getElementById("selected_mode");
+        var droneModeSwitch = document.getElementById("drone_mode_switch");
+        var seletedMode = document.getElementById("selected_mode");
     
-    if (droneModeSwitch.checked == true) {
+        if (droneModeSwitch.checked == true) {
         seletedMode.innerHTML = "mode automatique".toUpperCase();
 
-    } else {
+        } else {
         seletedMode.innerHTML = "mode manuel".toUpperCase();
-    }
-}
+        }
+        }
     </script>
     
 </head>
